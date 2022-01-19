@@ -1,0 +1,17 @@
+.main-holder {
+  padding: 50px;
+  background: rgb(8, 8, 20);
+  display: flex;
+}
+
+.text {
+  color: white;
+}
+
+.content-holder {
+}
+
+.image {
+  width: 550px;
+  height: 380px;
+}
