@@ -1,5 +1,4 @@
 * {
-  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -13,51 +12,55 @@ body {
 .container {
   display: flex;
   margin: 40px auto;
-  max-width: 700px;
-  min-width: 703px;
-  max-height: 300px;
-  min-height: 300px;
+  max-width: 760px;
+  min-width: 760px;
+  max-height: 320px;
+  min-height: 320px;
   background: hsl(244, 38%, 16%);
   border-radius: 5px;
 }
 
 .img-holder {
-  max-width: 50%;
-  max-height: 300px;
+  max-width: 48%;
+  max-height: 320px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  background: hsl(277, 89%, 38%);
+  background: hsl(277, 92%, 35%);
 }
 /* ================content=================*/
 
 .img {
   max-width: 100%;
-  min-height: 100%;
+  min-width: 340px;
+  min-height: 320px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   opacity: 0.5;
 }
 
 .desc-holder {
-  width: 49.9%;
+  width: 55%;
   color: white;
-  padding: 40px 40px 15px 40px;
+  padding: 30px 40px 20px 40px;
 }
 
 .hightlight {
-  color: violet;
+  color: rgb(188, 97, 241);
 }
 
 .subtitle {
-  font-size: 25px;
+  font-size: 32px;
   font-weight: 800;
-  padding-bottom: 20px;
+  margin-bottom: 18px;
   display: block;
+  font-family: "Roboto", sans-serif;
 }
 
 .desc {
   display: block;
-  padding-bottom: 35px;
+  padding-right: 15px;
+  margin-bottom: 20px;
+  font-family: "Inter", sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 20px;
@@ -65,6 +68,151 @@ body {
 
 .result {
   display: flex;
-  font-size: 15px;
-  font-weight: 800px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.result-subtitle {
+  font-size: 12px;
+  font-weight: 100;
+}
+
+.result-space {
+  text-transform: uppercase;
+}
+
+.result-space1 {
+  margin-right: 20px;
+}
+.result-space2 {
+  margin-right: 30px;
+}
+.result-space3 {
+  margin-right: 15px;
+}
+
+/* ================mobile=================*/
+
+@media only screen and (max-width: 755px) {
+  /* ===============contaienr=============== */
+  * {
+    box-sizing: border-box;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 340px;
+    min-width: 340px;
+    max-height: 820px;
+    min-height: 820px;
+    background: hsl(244, 38%, 16%);
+    border-radius: 5px;
+    align-items: center;
+  }
+
+  .img-holder {
+    max-width: 500px;
+    max-height: 250px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 0;
+    background: hsl(277, 92%, 35%);
+  }
+
+  /* ================content=================*/
+
+  .img {
+    max-width: 100%;
+    min-width: 340px;
+    min-height: 250px;
+    max-height: 250px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 0;
+
+    opacity: 0.5;
+  }
+
+  .desc-holder {
+    width: auto;
+    text-align: center;
+    height: 600px;
+    padding: 0px;
+  }
+
+  .hightlight {
+    color: rgb(185, 64, 255);
+  }
+
+  .subtitle {
+    padding: 30px 30px 0px 30px;
+  }
+  /* ===========description=========== */
+
+  .desc {
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    line-height: 25px;
+    padding: 0 30px;
+  }
+
+  .desc-space1 {
+    display: block;
+  }
+
+  .desc-space2 {
+    display: block;
+  }
+
+  /* ===========review=========== */
+
+  .result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
+
+  .result-subtitle {
+    font-size: 13px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 2px;
+  }
+
+  .result-number1 {
+    font-family: "Rotobo", sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    text-transform: lowercase;
+  }
+  .result-number2 {
+    font-family: "Rotobo", sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+    text-transform: lowercase;
+  }
+  .result-number3 {
+    font-family: "Rotobo", sans-serif;
+    font-size: 23px;
+    font-weight: 800;
+  }
+
+  .result-space {
+    width: 100px;
+    margin: 0;
+  }
+
+  .result-space1 {
+    margin-bottom: 30px;
+  }
+  .result-space2 {
+    margin-bottom: 30px;
+  }
+  .result-space3 {
+    margin-bottom: 30px;
+  }
 }
