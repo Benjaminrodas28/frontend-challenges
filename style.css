@@ -7,6 +7,14 @@
 /* ===============contaienr=============== */
 body {
   background: hsl(233, 47%, 7%);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.attribution {
+  color: white;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
@@ -41,7 +49,7 @@ body {
 .desc-holder {
   width: 55%;
   color: white;
-  padding: 30px 40px 20px 40px;
+  padding: 30px 20px 30px 25px;
 }
 
 .hightlight {
@@ -51,16 +59,17 @@ body {
 .subtitle {
   font-size: 32px;
   font-weight: 800;
-  margin-bottom: 18px;
+  text-align: start;
+  margin-bottom: 30px;
   display: block;
-  font-family: "Roboto", sans-serif;
+  font-family: "inter", sans-serif;
 }
 
 .desc {
   display: block;
-  padding-right: 15px;
-  margin-bottom: 20px;
-  font-family: "Inter", sans-serif;
+  text-align: start;
+  margin-bottom: 35px;
+  font-family: "Lexend Deca", sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 20px;
@@ -69,6 +78,7 @@ body {
 .result {
   display: flex;
   font-family: "Inter", sans-serif;
+  text-align: start;
   font-size: 18px;
   font-weight: 800;
 }
@@ -147,7 +157,8 @@ body {
   }
 
   .subtitle {
-    padding: 30px 30px 0px 30px;
+    text-align: center;
+    padding: 30px 20px 0px 20px;
   }
   /* ===========description=========== */
 
@@ -170,6 +181,7 @@ body {
   /* ===========review=========== */
 
   .result {
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -179,7 +191,7 @@ body {
   .result-subtitle {
     font-size: 13px;
     font-weight: 400;
-    font-family: "Roboto", sans-serif;
+    font-family: "Lexend Deca", sans-serif;
     letter-spacing: 2px;
   }
 
